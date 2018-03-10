@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nathan Call | Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	
+	<!--Javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<!--End of Javascript-->
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul class="menu">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="about">
+		<h1>About Me</h1>
+		<img src="images/MyFace.jpg" alt="My face" />
+		<p>Hi, my name is Nathan and I'm a senior at Westlake High School. 
+			I have been writing code for 2  years and have some experience with C# and C++. 
+			I am currently in Programming II, concurrent enrollment at Utah Valley University. 
+			I have also studied web design and development for 2 years. 
+			As a hobby I like to create 3D models using Blender 3D creation suite. 
+			I enjoy graphic design and using the Adobe Photoshop and Illustrator programs. 
+			From time to time I have also been known to do a little gaming.</p>
+	</div>
+
+	<div id="skills">
+		<h1>Technical Skills</h1>
+		<ul>
+			<li>HTML/CSS</li>
+			<li>C# - 2 Years</li>
+			<li>C++ - 6 Months</li>
+			<li>Photoshop</li>
+			<li>Illustrator</li>
+			<li>Blender 3D</li>
+		</ul>
+	</div>
+
+	<div id="portfolio">
+		<h1>Portfolio</h1>
+		<img src="images/NvidiaSite.png" alt="Nvidia Website" />
+		<img src="images/WestlakeSitePage1.png" alt="Westlake Site Page 1" />
+		<img src="images/WestlakeSitePage2.png" alt="Westlake Site Page 2" />
+		<img src="images/WestlakeSitePage3.png" alt="Westlake Site Page 3" />
+
+	</div>
+
+	<div id="contact">
+		<h1>Contact</h1>
+		
+		<div>
+			<h2>Nathan Call: nathanthecall@gmail.com</h2>
+		</div>
+		<!-- <form action="mailto:sbcall@gmail.com" method="POST" enctype="text/plain"> 
+			<p>(Required: *)</p> <br>
+			Your Email*<br>
+			<input type="email" name="emailAddress" id="email" required style="width: 300px;"><br>
+			<br>Subject<br>
+			<input type="text" name="subject" id="subject" style="width: 300px;"><br>
+			<br>Message<br>
+			<textarea name="message" cols="100" rows="10"></textarea>
+			<br><br>
+			<input type="submit" value="Send" style="width: 100px; height: 40px;">
+		</form> -->
+	</div>
+	
+	
+	<footer>
+	
+	</footer>
+
+</body>
+
+
+
+</html>
