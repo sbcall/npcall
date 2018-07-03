@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<!--Store Page-->
+
+<head>
+	<title>WHS Store Center</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			
+			<div id = "menu">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<b><p><a href = "index.html">Home</a></p></b>
+				<b><p><a href = "https://gpage62.wixsite.com/marketingpage">Courses</a></p></b>
+				<b><p><a href = "store.html">WHS Store</a></p></b>
+				<b><p><a href = "contact.html">Contact Us</a></p></b>	
+			</div>
+		</nav>
+	</header>	
+	
+	<div id="storeLinks">
+	
+		<h2>Links to Online Items:</h2>
+		
+		<ul>
+			<li><a href="https://ssastores.com/stores/info/?store=storm-center&s1=middle-school-high-school-or-college&s2=&s3=&s4=&s4=">SSA Stores</a></li>
+			<li><a href="https://www.prepsportswear.com/school/us/Utah/Saratoga_Springs/Westlake-High-School-Thunder.aspx?schoolid=2327770">Prep Sportswear</a></li>
+			<li><a href="http://www.customcat.com/campaign/whsstormcenter">Custom Cat</a></li>
+			<li><a href="https://www.logosoftwear.com/shops/Westlake">Logo Sportswear</a></li>
+		</ul>
+	
+	</div>
+	
+	<div id="storeSectionH1">
+	
+		<h1>Spirit and Apparel Items Available at Westlake:</h1>
+	
+	</div>
+	
+	<!--\/Item Boxes\/-->
+	
+	<!--Item 1-->
+	<div id="item">
+	
+		<h2>Storm Center Gildan Heavy Blend Hood</h2>
+		<p>Decoration Type: Digital Print, Thermal Transfer
+
+-50% Cotton, 50% Polyester
+ -Pill-resistant air jet yarn
+ -Double-needle stitching throughout
+ -Double-line hood
+ -Pouch Pocket;  Matching drawcord
+ -1x1 ribbed cuffs and waistband with spandex</p>
+		<img src="images/Storm-Center-Gildan-Heavy-Blend-Hood.png" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $36.95</h3>
+	
+	</div>
+	
+	<!--Item 2-->
+	<div id="item">
+	
+		<h2>Item Name</h2>
+		<p>Item Description</p>
+		<img src="images/blank-square.jpg" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $00.00</h3>
+	
+	</div>
+	
+	<!--Item 3-->
+	<div id="item">
+	
+		<h2>Item Name</h2>
+		<p>Item Description</p>
+		<img src="images/blank-square.jpg" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $00.00</h3>
+	
+	</div>
+	
+	<!--Item 4-->
+	<div id="item">
+	
+		<h2>Item Name</h2>
+		<p>Item Description</p>
+		<img src="images/blank-square.jpg" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $00.00</h3>
+	
+	</div>
+	
+	<!--Item 5-->
+	<div id="item">
+	
+		<h2>Item Name</h2>
+		<p>Item Description</p>
+		<img src="images/blank-square.jpg" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $00.00</h3>
+	
+	</div>
+	
+	<!--Item 6-->
+	<div id="item">
+	
+		<h2>Item Name</h2>
+		<p>Item Description</p>
+		<img src="images/blank-square.jpg" alt="Item Picture" />
+		<ul>
+			<li><button onClick="itemOnePriceOne()">Small-3XL</button></li>
+			<li><button onClick="itemOnePriceTwo()">4XL-5XL</button></li>
+		</ul>
+		<h3 id="priceChange">Price: $00.00</h3>
+	
+	</div>
+	
+	
+	<footer>
+	
+		
+	
+	</footer>
+	
+	
+	<!--JavaScript-->
+	<script>
+		function openNav() {
+			document.getElementById("menu").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("menu").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+		
+		//Item one price changing
+		function itemOnePriceOne() {
+		document.getElementById("priceChange").innerHTML = "Price: $36.95";
+		}
+		function itemOnePriceTwo() {
+		document.getElementById("priceChange").innerHTML = "Price: $40.00";
+		}
+	</script>
+
+</body>
+
+</html>
