@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Landscaping okay? Okay.">
+		<meta name="keywords" content="Land, Scaping, Landscaping, Grass, Mr. Stark, I don't feel so good">
+	
+		<title>Ease-Scaping | About and Contact Page</title>
+	</head>
+	
+	<body>
+	<!--Header and Navigation-->
+		<header>
+			<!--Page Navigation-->
+			<nav>
+			
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			
+				<div id = "menu">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<b><p><a href = "index.html">Home</a></p></b>
+					<b><p><a href = "about.html">About</a></p></b>
+					<b><p><a href = "gallery.html">Gallery</a></p></b>
+				</div>
+			</nav>
+		</header>
+	<!--End of Header and Navigation-->
+		
+		<!--main section of the about page-->
+		<div id="section1About">
+			<h1>About Us</h1>
+			<img src="images/logo.png" alt="da logo">
+			<p>Ease-Scaping is a company dedicated to helping you make your yard look its best. We are always taking our customers feedback and trying to improve ourselves. We have all of the equipment and experience all you need to do is tell us what you want. If you want to see the kinds of materials we use then all you need to do is stop by one of our warehouses and you can get a look around!</p>
+		</div>
+		
+		<!--contact section of website-->
+		<div id="section2About">
+			<iframe src="https://docs.google.com/a/alpinesd.org/forms/d/e/1FAIpQLSfi-FDbwBaAqfON39_70l2GIKr8Ne_LXgDi8iOnPGBTfC2TNA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
+		<!--end of contact section of website-->
+		
+		
+		<footer>
+		
+		</footer>
+		
+		
+		<!--Javascript-->
+		<script>
+		//Hamburger Menu 
+			function openNav() {
+			document.getElementById("menu").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("menu").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+			
+		//
+		</script>
+<!--End of Javascript-->
+	</body>
+</html>
