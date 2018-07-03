@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<!--Home Page-->
+
+<head>
+	<title>WHS Storm Center</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			
+			<div id = "menu">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<b><p><a href = "index.html">Home</a></p></b>
+				<b><p><a href = "https://gpage62.wixsite.com/marketingpage">Courses</a></p></b>
+				<b><p><a href = "store.html">WHS Store</a></p></b>
+				<b><p><a href = "contact.html">Contact Us</a></p></b>	
+			</div>
+		</nav>
+	</header>	
+	
+	<div id="banner">
+		<img src="images/bannerWestlake2.jpg" alt="Westlake Banner" />
+	</div>
+	
+	<div id="section1">
+	
+		<h1><a href="https://skyward.alpinedistrict.org/scripts/wsisa.dll/WService=wsEAplus/seplog01">Check your grades on Skyward</a></h1>
+		<h1><a href="http://whs.alpineschools.org/">Check the school calender</a></h1>
+	
+	</div>
+	
+	<footer>
+	
+		
+	
+	</footer>
+	
+	
+	<!--JavaScript-->
+	<script>
+		function openNav() {
+			document.getElementById("menu").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("menu").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+	</script>
+
+</body>
+
+</html>
