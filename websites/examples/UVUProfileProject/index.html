@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Nathan Call</title>
+  </head>
+
+  <body>
+    <main>
+        <header class="animated slideInDown container-fluid">
+            <div class="container-fluid" id="headerContent">
+                <h1 class="col-lg-3 navbar-brand">Nathan Call</h1>
+
+                <nav class="animated pulse col-lg-9 col-sm-12 offset-lg-2">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <button class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" aria-controls="pills-home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="pills-exp-tab" data-toggle="pill" href="#pills-exp" aria-controls="pills-exp" aria-selected="false">Experience</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="pills-resume-tab" data-toggle="pill" href="#pills-resume" aria-controls="pills-resume" aria-selected="false">Resume</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="pills-hobby-tab" data-toggle="pill" href="#pills-hobby" aria-controls="pills-hobby" aria-selected="false">Hobbies</button>
+                        </li>
+                        <li class="nav-item">
+                            <button data-toggle="modal" data-target="#logFormModal">Log Visit</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div id="pills-tabContent" class="animated zoomIn tab-content container-fluid">
+          <section class="tab-pane show container active col-lg-7" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="border-0 mePicture container-fluid">
+                <!--STUB ONE--> <img src="" alt="A picture of me" id="picStub">
+              </div>
+              <div class="card-block px-1 col-sm-12 col-lg-9">
+                <h3 class="card-title container-fluid" id="greetStub"></h3>
+                <!--STUB TWO--> <p id="bioStub" class="card-text container-fluid"></p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 snippetIcon col-sm-3 mt-3">
+                <img src="img/contactIcon.png" alt=" ">
+              </div>
+              <div class="card-block px-2 col-sm-9">
+                <h3 class="card-title container-fluid">Contact</h3>
+                <p class="card-text container-fluid">The following is my contact information. Feel free to contact me using whichever method you prefer.</p>
+                <ul class="card-text container-fluid" id="contactStub">
+                  <!--STUB THREE-->
+                </ul>
+              </div>
+            </article>
+
+            <article class="container-fluid flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 snippetIcon col-sm-3 mt-3">
+                <img src="img/eduIcon.png" alt=" ">
+              </div>
+              <div class="card-block px-2 col-sm-9">
+                <h3 class="card-title container-fluid">Education</h3>
+                <p class="card-text container-fluid" id="eduStub"></p>
+              </div>
+            </article>
+
+            <article class="container-fluid flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 snippetIcon col-sm-3 mt-3">
+                <img src="img/hobbyIconByGoogle.png">
+              </div>
+              <div class="card-block px-2 col-sm-9">
+                <h3 class="card-title container-fluid">Hobbies</h3>
+                <p class="card-text container-fluid" id="hobbyStubOne"></p>
+                <p class="card-text container-fluid" id="hobbyStubTwo"></p>
+              </div>
+            </article>
+          </section>
+
+          <section class="tab-pane container col-lg-7" id="pills-exp" role="tabpanel" aria-labelledby="pills-exp-tab">
+            <h1 class="display-6">Experience and Skills</h1>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Programming</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">In highschool I had two programming classes, one for C++ and one for C#. Both classes were concurrent enrollment (they gave college credit). We went over everything from simple things such as loops all the way to objects and classes. I was given plenty of projects to do like a calculator, a drawing program, and many more.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Web Coding</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I have experience with web development due to two classes I took in highschool that each taught me HTML and CSS. One was a class for the basics and the other was slightly more advanced.</p>
+                <p class="card-text container-fluid">I am currently taking a third class at UVU in order to learn JavaScript as my previous teacher was unable to teach us that due to time. I also am taking it to learn Bootstrap and JQuery. I have used several different programs for writing code but my favorite is Visual Studio Code. I was initially taught with Notepad++. I have also been introduced to Cloud 9 and Brackets.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Others</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I have other skills not related to programming and coding languages as well. Photography classes taught me to edit images pretty well. I have also gained some design knowledge from a couple of graphic and product design classes. I can effectively use Adobe Photoshop, Illustrator, and Lightroom to utilize these skills.</p>
+                <p class="card-text container-fluid">Video editing is another thing I have learned and can do it effectively in several programs given a few minutes to explore but am most well versed in Adobe Premier Pro.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="tab-pane container col-lg-7" id="pills-resume" role="tabpanel" aria-labelledby="pills-resume-tab">
+            <h1 class="display-6">Resume Information</h1>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Education</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">Graduated from Westlake High School in the class of 2018 with a diploma and 3 awards.</p>
+                <p class="card-text container-fluid">Currently attending Utah Valley University studying Computer Science with intent to complete a Bachelors Degree.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Awards</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I earned three rewards senior year of high school for completing CTE pathways. Only two or three others won that many awards.</p>
+                <ul class="card-text container-fluid">
+                  <li>Commercial Photography CTE Pathway Certificate</li>
+                  <li>Programming/Software Development CTE Pathway Certificate</li>
+                  <li>Commercial Art CTE Pathway Certificate</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Past Work</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I don't have much past work experience from focusing on school and past health issues.</p>
+                <p class="card-text container-fluid">I did lawn services in 2015 to gain some money and my customers liked the work I did.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Organizations</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I was a member of the Boy Scouts of America from 2012-2018 and was the first assistant at a point</p>
+                <p class="card-text container-fluid">That experience taught me to do teamwork better and to work harder.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Training</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I have had training or have ben self-trained in the following languages and programs.</p>
+                
+                <ul class="card-text container-fluid" id="skillStub">
+                  <!--STUB FOUR-->
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section class="tab-pane container col-lg-7" id="pills-hobby" role="tabpanel" aria-labelledby="pills-hobby-tab">
+            <h1 class="display-6">Hobbies</h1>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Gaming</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">My biggest hobby is gaming. I enjoy most kinds of games.</p>
+                <p class="card-text container-fluid">I grew up playing on Nintendo consoles. I loved playing games like Super Mario World and Donkey Kong Country with my dad. We later got a Gamecube and my whole family would play Mario Kart Double Dash most nights.</p>
+                <p class="card-text container-fluid">I ended up branching out and now I play all those Nintendo platformers and rpg's but also first person shooters, strategy games, and much more.</p>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">Photography</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I have always enjoyed taking pictures but I took it up as a hobby in 2017 when I took a photography class. That class was followed by an advanced photography class.</p>
+                <p class="card-text container-fluid">Here are some of the photos I have taken!</p>
+              </div>
+              <!--Image Carousel-->
+              <div id="photoSlides" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#photoSlides" data-slide-to="0" class="active"></li>
+                  <li data-target="#photoSlides" data-slide-to="1"></li>
+                  <li data-target="#photoSlides" data-slide-to="2"></li>
+                  <li data-target="#photoSlides" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/orlando1.jpg" alt="Orlando Pic 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/orlando2.jpg" alt="Orlando Pic 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/provo1.jpg" alt="Provo Pic 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/provo2.jpg" alt="Provo Pic 2">
+                  </div>
+                  <a class="carousel-control-prev" href="#photoSlides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#photoSlides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="container-fluid card flex-row flex-wrap py-sm-4">
+              <div class="card-header border-0 col-sm-12">
+                <h3 class="card-title container-fluid">3D Models</h3>
+              </div>
+              <div class="card-block px-2 col-sm-12">
+                <p class="card-text container-fluid">I am currently using youtube and just training myself to try and learn how to make 3D models in Blender 3D. I hope to make 3D modeling a hobby of mine and perhaps make a small game after I've gotten better at it.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <div class="modal fade" id="logFormModal" tabindex="-1" role="dialog" aria-labelledby="logVisit" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content container-fluid animated zoomIn">
+              <div class="modal-header">
+                <h4 class="modal-title" id="logVisit">Log your visit</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fill out this form and submit to log your visit.</p>
+                <form class="needs-validation" id="visitForm" action="https://wp.zybooks.com/form-viewer.php" novalidate>
+                  <div class="form-group">
+                    <label for="first-name" class="col-sm-12">First Name*</label>
+                    <input type="text" class="col-sm-12 form-control" id="first-name" placeholder="Enter first name here" required>
+                    <div class="invalid-feedback alert alert-danger" id="firstError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name" class="col-sm-12">Last Name*</label>
+                    <input type="text" class="col-sm-12 form-control" id="last-name" placeholder="Enter last name here" required>
+                    <div class="invalid-feedback alert alert-danger" id="lastError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="address" class="col-sm-12">Address*</label>
+                    <input type="text" class="col-sm-12 form-control" id="address" placeholder="Address" required>
+                    <div class="invalid-feedback alert alert-danger" id="addressError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="city" class="col-sm-12">City*</label>
+                    <input type="text" class="col-sm-12 form-control" id="city" placeholder="City Name" required>
+                    <div class="invalid-feedback alert alert-danger" id="cityError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="state" class="col-sm-12">State*</label>
+                    <input type="text" class="col-sm-12 form-control" id="state" placeholder="State Name" required>
+                    <div class="invalid-feedback alert alert-danger" id="stateError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="zip-code" class="col-sm-12">Zip Code</label>
+                    <input type="text" class="col-sm-12 form-control" id="zip-code" placeholder="Example: 89025 or 902365635">
+                    <div class="invalid-feedback alert alert-danger" id="zipError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="cell-phone" class="col-sm-12">Cell Phone*</label>
+                    <input type="tel" class="col-sm-12 form-control" id="cell-phone" placeholder="Example: 555-555-5555" required>
+                    <div class="invalid-feedback alert alert-danger" id="phoneError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email-address" class="col-sm-12">Email Address*</label>
+                    <input type="email" class="col-sm-12 form-control" id="email-address" placeholder="Example: example@gmail.com" required>
+                    <div class="invalid-feedback alert alert-danger" id="emailError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="username" class="col-sm-12">Username*</label>
+                    <input type="text" class="col-sm-12 form-control" id="username" placeholder="Username here" required>
+                    <div class="invalid-feedback alert alert-danger" id="usernameError"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-sm-12">Password*</label>
+                    <input type="password" class="col-sm-12 form-control" id="password" placeholder="Password here" required>
+                    <div class="invalid-feedback alert alert-danger" id="passwordError"></div>
+                  </div>
+
+                  <div id="page-find-boxes" class="col-sm-12 form-group">
+                    <p>How did you find my page?*</p>
+
+                    <div id="checkboxGroup">
+                      <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="find-internet" name="page-find">
+                          <label for="find-internet" class="custom-control-label">Internet</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="find-friend" name="page-find">
+                        <label for="find-friend" class="custom-control-label">Friend</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="find-family" name="page-find">
+                        <label for="find-family" class="custom-control-label">Family</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="find-other" name="page-find">
+                        <label for="find-other" class="custom-control-label">Other</label>
+                      </div>
+                      <div class="invalid-feedback alert alert-danger" id="findError">Please select one or more checkbox</div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-1"></div>
+                  <div id="page-rate-radios" class="col-sm-12 form-group">
+                    <p>How did you like my page?*</p>
+
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="rate-good" name="page-rate" class="custom-control-input" required>
+                      <label for="rate-good" class="custom-control-label">It's Good</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="rate-okay" name="page-rate" class="custom-control-input" required>
+                      <label for="rate-okay" class="custom-control-label">It's Okay</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="rate-unsure" name="page-rate" class="custom-control-input" required>
+                      <label for="rate-unsure" class="custom-control-label">Not sure</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="rate-improve" name="page-rate" class="custom-control-input" required>
+                      <label for="rate-improve" class="custom-control-label">Could be improved</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="rate-bad" name="page-rate" class="custom-control-input" required>
+                      <label for="rate-bad" class="custom-control-label">It's Bad</label>
+                    </div>
+                    <div class="invalid-feedback alert alert-danger" id="rateError"></div>
+                  </div>
+
+                  <div class="comments-box">
+                    <label for="comments" class="col-sm-12">Comments</label>
+                    <textarea class="col-sm-11" id="comments" placeholder="Put any comments you have for me here..."></textarea>
+                  </div>
+
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <input type="submit" class="btn btn-primary" id="submitButton" value="Submit">
+                  <div class="alert alert-success" id="submitSuccess">Form submitted successfully</div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer></footer>
+
+    </main>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--JavaScript File Links-->
+    <script src="js/profile.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/validate.js"></script>
+
+    <script>
+    (function() {
+       'use strict';
+       initValidation("#visitForm");
+    })();
+  </script>
+  </body>
+</html>
